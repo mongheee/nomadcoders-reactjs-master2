@@ -1,10 +1,8 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Router from "./Router";
-import { lightTheme, darkTheme } from "./theme";
 import { useState } from "react";
 import { useRecoilValue } from "recoil";
-import { isDarkAtom } from "./atoms";
+import ToDoList from "./ToDoList";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap');
@@ -71,12 +69,11 @@ a {
 `;
 
 function App() {
-  const isDark = useRecoilValue(isDarkAtom);
   return (
-    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+    <>
       <GlobalStyle />
-      <Router />
-    </ThemeProvider>
+      <ToDoList />
+    </>
   );
 }
 
