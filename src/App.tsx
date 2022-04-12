@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 * {
-  box-sizing:border-box ;
+  box-sizing : border-box ;
 }
 body {
   font-family:'Hind', sans-serif ;
@@ -63,6 +63,9 @@ body {
 a {
   text-decoration:none ;
   color:inherit;
+}
+button, input, select {
+  border : none;
 }
 `;
 
