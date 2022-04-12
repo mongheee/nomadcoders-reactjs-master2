@@ -3,15 +3,6 @@ import { useSetRecoilState } from "recoil";
 import { Categories, IToDo, toDoState } from "../atoms";
 
 export function ToDo({ text, category, id }: IToDo) {
-  /* //Fn호출시 특정한 카테고리를 인자로 받고 싶다.
-  const onClick = (newCategory: IToDo["category"]) => {
-    };
-
-      {category !== "TO_DO" && (
-        <button onClick={() => onClick("DOING")}>To Do</button>
-      )}
-
-   */
   const setToDos = useSetRecoilState(toDoState);
   const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const {
