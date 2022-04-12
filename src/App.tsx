@@ -1,8 +1,6 @@
 import React from "react";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { useState } from "react";
-import { useRecoilValue } from "recoil";
-import ToDoList from "./ToDoList";
+import { createGlobalStyle } from "styled-components";
+import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap');
