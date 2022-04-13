@@ -45,6 +45,9 @@ const Button = styled.button`
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    margin-left: 5px;
+  }
 `;
 
 interface IForm {
