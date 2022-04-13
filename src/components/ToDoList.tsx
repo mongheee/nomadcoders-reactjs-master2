@@ -44,7 +44,13 @@ const Select = styled.select`
   border-radius: 10px;
   padding: 5px;
   color: ${(props) => props.theme.bgColor};
+  outline-color: ${(props) => props.theme.focusColor};
+  option {
+    background: ${(props) => props.theme.bgColor};
+    color: ${(props) => props.theme.textColor};
+  }
 `;
+const Detail = styled.div``;
 
 function ToDoList() {
   const toDos = useRecoilValue(toDoSelector);
@@ -71,9 +77,11 @@ function ToDoList() {
             <CreateToDo />
           </Main>
         </Content>
-        {toDos?.map((toDo) => (
-          <ToDo key={toDo.id} {...toDo} />
-        ))}
+        <Detail>
+          {toDos?.map((toDo) => (
+            <ToDo key={toDo.id} {...toDo} />
+          ))}
+        </Detail>
       </InnerContainer>
     </Container>
   );

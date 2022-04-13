@@ -4,7 +4,8 @@ import styled from "styled-components";
 import { Categories, IToDo, toDoState } from "../atoms";
 
 const Container = styled.div`
-  padding: 5px 30px;
+  padding: 5px;
+  width: 100%;
 `;
 const Content = styled.li`
   display: flex;
@@ -29,6 +30,7 @@ const TextBox = styled.span`
   }
 `;
 const BtnBox = styled.div`
+  padding: 5px 0;
   width: 170px;
   display: flex;
   justify-content: space-around;
