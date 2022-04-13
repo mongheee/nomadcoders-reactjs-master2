@@ -40,6 +40,7 @@ const Button = styled.button`
   font-size: 14px;
   border-radius: 20px;
   color: ${(props) => props.theme.bgColor};
+  background: ${(props) => props.theme.textColor};
   &:hover {
     border: 2px solid ${(props) => props.theme.textColor};
     color: ${(props) => props.theme.textColor};

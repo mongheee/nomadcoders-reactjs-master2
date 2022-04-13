@@ -25,6 +25,7 @@ const Input = styled.input`
   padding: 10px;
   outline-color: ${(props) => props.theme.focusColor};
   color: ${(props) => props.theme.focusColor};
+  background: ${(props) => props.theme.textColor};
   &::placeholder {
     padding: 10px;
     opacity: 0.3;
@@ -37,6 +38,7 @@ const Button = styled.button`
   border-radius: 20px;
   font-size: 20px;
   color: ${(props) => props.theme.bgColor};
+  background: ${(props) => props.theme.textColor};
   &:hover {
     color: ${(props) => props.theme.textColor};
     background-color: ${(props) => props.theme.bgColor};

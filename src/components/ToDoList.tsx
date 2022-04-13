@@ -45,6 +45,7 @@ const Select = styled.select`
   padding: 5px;
   color: ${(props) => props.theme.bgColor};
   outline-color: ${(props) => props.theme.focusColor};
+  background: ${(props) => props.theme.textColor};
   option {
     background: ${(props) => props.theme.bgColor};
     color: ${(props) => props.theme.textColor};
